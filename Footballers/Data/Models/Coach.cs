@@ -12,6 +12,9 @@ namespace Footballers.Data.Models
         [MaxLength(40)]
         public string Name { get; set; } = null!;
 
+        [Required]
+        public string Nationality { get; set; } = null!;
+
         public virtual ICollection<Footballer> Footballers { get; set; } 
             = new HashSet<Footballer>();
     }
